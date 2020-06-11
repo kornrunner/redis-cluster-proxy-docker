@@ -23,7 +23,7 @@ RUN chmod +x /usr/local/bin/redis-cluster-proxy
 RUN ldd /usr/local/bin/redis-cluster-proxy
 
 RUN mkdir -p /usr/local/etc/redis-cluster-proxy
-RUN mkdir -p /use/local/run/redis-cluster-proxy
+RUN mkdir -p /usr/local/run/redis-cluster-proxy
 RUN chown -R app:app /usr/local
 VOLUME /usr/local/etc/redis-cluster-proxy
 VOLUME /usr/local/run/redis-cluster-proxy
