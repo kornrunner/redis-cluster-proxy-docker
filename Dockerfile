@@ -7,7 +7,7 @@ RUN chown -R app:app /usr/local
 
 WORKDIR /tmp
 USER app
-RUN git clone https://github.com/artix75/redis-cluster-proxy
+RUN git clone https://github.com/kornrunner/redis-cluster-proxy
 RUN cd redis-cluster-proxy && make install
 
 FROM alpine:3.11 as runtime
