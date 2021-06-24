@@ -35,3 +35,4 @@ WORKDIR /home/app
 ENTRYPOINT ["/usr/local/bin/redis-cluster-proxy"]
 EXPOSE 7777
 CMD ["redis-cluster-proxy"]
+
